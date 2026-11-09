@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>лаб7</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="page-title">Мой выпускной <span>(лаб№7)</span></h1>
+            <p class="page-subtitle">Горизонтальная адаптивная галерея-слайдер</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="gallery-section">
+            <div class="container">
+                <div class="slider-wrapper">
+                    <button type="button" class="slider-arrow slider-arrow-prev" aria-label="Предыдущее изображение">
+                        <svg viewBox="0 0 24 24" class="arrow-icon" width="24" height="24" aria-hidden="true">
+                            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path>
+                        </svg>
+                    </button>
+
+                    <div class="slider-window">
+                        <div id="slider-track" class="slider-track">
+                            <div class="slide-item">
+                                <figure class="slide-card">
+                                    <div class="image-wrapper">
+                                        <img src="image1.jpg" alt="Изображение 1" width="600" height="400" class="slide-image">
+                                    </div>
+                                    <figcaption class="slide-caption">Фото 1</figcaption>
+                                </figure>
+                            </div>
+                            <div class="slide-item">
+                                <figure class="slide-card">
+                                    <div class="image-wrapper">
+                                        <img src="image2.jpg" alt="Изображение 2" width="600" height="400" class="slide-image">
+                                    </div>
+                                    <figcaption class="slide-caption">Фото 2</figcaption>
+                                </figure>
+                            </div>
+                            <div class="slide-item">
+                                <figure class="slide-card">
+                                    <div class="image-wrapper">
+                                        <img src="image3.jpg" alt="Изображение 3" width="600" height="400" class="slide-image">
+                                    </div>
+                                    <figcaption class="slide-caption">Фото 3</figcaption>
+                                </figure>
+                            </div>
+                            <div class="slide-item">
+                                <figure class="slide-card">
+                                    <div class="image-wrapper">
+                                        <img src="image4.jpg" alt="Изображение 4" width="600" height="400" class="slide-image">
+                                    </div>
+                                    <figcaption class="slide-caption">Фото 4</figcaption>
+                                </figure>
+                            </div>
+                            <div class="slide-item">
+                                <figure class="slide-card">
+                                    <div class="image-wrapper">
+                                        <img src="image5.jpg" alt="Изображение 5" width="600" height="400" class="slide-image">
+                                    </div>
+                                    <figcaption class="slide-caption">Фото 5</figcaption>
+                                </figure>
+                            </div>
+                            <div class="slide-item">
+                                <figure class="slide-card">
+                                    <div class="image-wrapper">
+                                        <img src="image6.jpg" alt="Изображение 6" width="600" height="400" class="slide-image">
+                                    </div>
+                                    <figcaption class="slide-caption">Фото 6</figcaption>
+                                </figure>
+                            </div>
+                            <div class="slide-item">
+                                <figure class="slide-card">
+                                    <div class="image-wrapper">
+                                        <img src="image7.jpg" alt="Изображение 7" width="600" height="400" class="slide-image">
+                                    </div>
+                                    <figcaption class="slide-caption">Фото 7</figcaption>
+                                </figure>
+                            </div>
+                            <div class="slide-item">
+                                <figure class="slide-card">
+                                    <div class="image-wrapper">
+                                        <img src="image8.jpg" alt="Изображение 8" width="600" height="400" class="slide-image">
+                                    </div>
+                                    <figcaption class="slide-caption">Фото 8</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="slider-arrow slider-arrow-next" aria-label="Следующее изображение">
+                        <svg viewBox="0 0 24 24" class="arrow-icon" width="24" height="24" aria-hidden="true">
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="pager-container">
+                    <div class="pager-info">
+                        Страница <span id="current-page" class="pager-current">1</span> из <span id="total-pages" class="pager-total">3</span>
+                    </div>
+                    <div id="pager-dots" class="pager-dots"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Разработано с душой</p>
+        </div>
+    </footer>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
